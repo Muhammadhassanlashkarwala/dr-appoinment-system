@@ -1,12 +1,12 @@
 import Image from "next/image";
+import { Button } from "./ui/button";
 
-export default function HeroSection(){
-    return(
-        
+export const HeroSection = () => {
+    return( 
 <section className="text-gray-600 body-font ">
-  <div className="container flex mx-auto px-20 py-24 md:flex-row flex-col items-center">
+  <div className="container flex mx-auto px-20 py-14 md:flex-row flex-col items-center">
     <div className="lg:flex-grow md:w-3/2  md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 className="title-font px-10 sm:text-4xl text-3xl mb-4 font-bold text-gray-900">
+      <h1 className="title-font px-10 sm:text-4xl text-3xl mb-4 font-normal text-gray-900">
       DOCTOR APPOINMENT 
         <br className="hidden lg:inline-block" />
         SYSTEM.
@@ -22,13 +22,14 @@ export default function HeroSection(){
         authentic tumeric truffaut hexagon try-hard
         chambray.
       </p>
-      <div className="flex px-10 justify-center">
-        <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-          Button
-        </button>
-        <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-          Button
-        </button>
+      <div className="flex px-10 gap-4 justify-center">
+      <Button>
+        Button
+        </Button>
+        <Button>
+        Button
+        </Button>
+  
       </div>
     </div>
     <div className="lg:max-w-lg lg:w-full px-10 md:w-1/2 w-5/6 flex justify-end">
@@ -45,3 +46,5 @@ export default function HeroSection(){
 </section>
     );
 };
+
+// 15:22

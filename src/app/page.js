@@ -1,5 +1,7 @@
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import { DoctorsSection } from "@/components/DoctorsSection";
+import { Header } from "@/components/Header";
+import { HeroSection } from "@/components/HeroSection";
+
 
 
 export default function Home() {
@@ -7,7 +9,8 @@ export default function Home() {
     <div className="min-h-screen">
       <Header />
       <HeroSection />
-     {/* <h2 className="p-4 text-white text-3xl">Muhammad Hassan...</h2> */}
+      <DoctorsSection isHome={true} />
+
     </div>
   );
 }
