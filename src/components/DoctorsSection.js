@@ -25,21 +25,22 @@ export const DoctorsSection = ({isHome}) => {
     return(
         <div className="container mx-auto">
       <div className=" flex justify-between px-20">
-        <h1 className="font-semibold px-10 text-3xl">Premium Doctors</h1>
+        <h1 className="font-semibold px-10 my-4 text-3xl">Premium Doctors</h1>
         <div className="px-10">
-
-{isHome ? (
+{
+ isHome ? (
     <Link href={"/doctors"}>
     <Button>See All</Button>
     </Link>
-    ) : (
+    )
+    :(
     <Select>
-    <SelectTrigger className="w-[180px]">
-      <SelectValue placeholder="Dr.categories" />
+    <SelectTrigger className="w-[180px] my-4">
+      <SelectValue placeholder="Dr.categories"/>
     </SelectTrigger>
     <SelectContent>
       {categories.map((category) => ( <SelectItem key={category} value={category}>{category}</SelectItem>
-      ))};
+      ))}
     </SelectContent>
   </Select>
 )};

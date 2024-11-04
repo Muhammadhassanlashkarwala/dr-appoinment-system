@@ -1,5 +1,3 @@
-
-
 export const categories = [
     "Allergy and Immunology",
     "Anesthesiology",
