@@ -6,7 +6,7 @@ export const HeroSection = () => {
 <section className="text-gray-600 body-font ">
   <div className="container flex mx-auto px-20 py-14 md:flex-row flex-col items-center">
     <div className="lg:flex-grow md:w-3/2  md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 className="title-font px-10 sm:text-4xl text-3xl mb-4 font-normal text-gray-900">
+      <h1 className="font-semibold px-10 sm:text-3xl text-3xl mb-4 text-gray-900">
       DOCTOR APPOINMENT 
         <br className="hidden lg:inline-block" />
         SYSTEM.
@@ -23,11 +23,11 @@ export const HeroSection = () => {
         chambray.
       </p>
       <div className="flex px-10 gap-4 justify-center">
-      <Button>
-        Button
+      <Button variant="outline">
+        Find Doctor You Need
         </Button>
         <Button>
-        Button
+    Apply as Doctor
         </Button>
   
       </div>

@@ -132,7 +132,7 @@ export const doctors = [
         "gender": "Female"
     },
     {
-        "name": "Dr. Michael Anderson",
+        "name": "Dr. Michael",
         "appointmentTime": "2024-11-23T09:00:00",
         "fees": 190,
         "category": "Physical Medicine and Rehabilitation",

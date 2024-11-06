@@ -19,7 +19,7 @@ export const Header =() => {
       <Avatar>
       <Avatar>
   <AvatarImage src="https://github.com/shadcn.png" />
-  <AvatarFallback>DAS</AvatarFallback>
+  <AvatarFallback>Not upload an image</AvatarFallback>
 </Avatar>
       </Avatar>
     </MenubarTrigger>
