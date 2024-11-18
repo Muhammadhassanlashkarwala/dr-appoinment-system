@@ -8,6 +8,7 @@ import {
     MenubarTrigger,
   } from "@/components/ui/menubar"
   import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+  import Link from "next/link";
 export const Header =() => {
     return(
        <div className="container bg-secondary py-3 px-10 flex justify-between mx-auto">
@@ -24,14 +25,15 @@ export const Header =() => {
       </Avatar>
     </MenubarTrigger>
     <MenubarContent>
-      <MenubarItem>
-        New Tab <MenubarShortcut>⌘T</MenubarShortcut>
-      </MenubarItem>
-      <MenubarItem>New Window</MenubarItem>
+      <Link href={'/profile'}>
+      <MenubarItem>Profile</MenubarItem> 
+      </Link>
       <MenubarSeparator />
-      <MenubarItem>Share</MenubarItem>
+     <Link href={'/appointments'}>
+     <MenubarItem>My Appointment</MenubarItem>
+     </Link>
       <MenubarSeparator />
-      <MenubarItem>Print</MenubarItem>
+      <MenubarItem>Logout</MenubarItem>
     </MenubarContent>
   </MenubarMenu>
 </Menubar>

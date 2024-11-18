@@ -15,9 +15,10 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-import { Button } from "./ui/button";
+  import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { HomeIcon, PlusIcon, StitchesLogoIcon } from "@radix-ui/react-icons"
 
 export const DoctorsSection = ({isHome}) => {
 
@@ -44,24 +45,56 @@ export const DoctorsSection = ({isHome}) => {
       ))}
     </SelectContent>
   </Select>
-)};
+)}
       
         </div>
       </div>
      <div className="px-10 mt-4">
-     <div className="grid px-20 gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+     <div className="grid my-3 px-20 gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
        {filtered.map((doctor) => (
          <Card key={doctor.name}>
-        <CardHeader>
-        <div className="flex gap-4">
-        <Avatar>
+        <CardHeader className={"flex flex-row"}>
+        <Avatar className="self-center h-10 w-10 gap-4">
   <AvatarImage src="https://github.com/shadcn.png" />
   <AvatarFallback>DAS</AvatarFallback>
 </Avatar>
+    <div className="pl-4">
     <CardTitle>{doctor.name}</CardTitle>
   <CardDescription>{doctor.category}</CardDescription>
-        </div>
+    </div>
   </CardHeader>
+  {
+    !isHome && <CardContent>
+    <div className="flex justify-between my-2">
+      <div className="flex items-center gap-2">
+        <HomeIcon />
+      <h1 className="font-semibold">Gender</h1>
+      </div>
+      <h1>{doctor.gender}</h1>
+    </div>
+    <div className="flex justify-between my-2">
+    <div className="flex items-center gap-2">
+        <PlusIcon />
+      <h1 className="font-semibold">Hospital</h1>
+      </div>
+      <h1>{doctor.hospital}</h1>
+    </div>
+    <div className="flex justify-between my-2">
+    <div className="flex items-center gap-2">
+        <StitchesLogoIcon />
+      <h1 className="font-semibold">Appointment Time</h1>
+      </div>
+      <h1>{doctor.appointmentTime}</h1>
+    </div>
+  </CardContent>
+  }
+  
+
+  <CardFooter>
+    <Link href={`/doctors/${doctor.id}`}>
+    <Button>See Detail</Button>
+    </Link>
+  </CardFooter>
        </Card>
       
        ))}
