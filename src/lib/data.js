@@ -24,6 +24,7 @@ export const categories = [
     "Geriatrics",
     "Sports Medicine",
     "Occupational Medicine"
+    
 ];
 
 export const doctors = [
