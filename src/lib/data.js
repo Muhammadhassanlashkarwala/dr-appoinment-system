@@ -24,7 +24,6 @@ export const categories = [
     "Geriatrics",
     "Sports Medicine",
     "Occupational Medicine"
-    
 ];
 
 export const doctors = [
@@ -260,3 +259,138 @@ export const currentUser = {
     role: "doctor",
     email: "muhammadhassan219019@gmail.com"
 }
+
+export const appointments = [
+    [
+        {
+            "user": {
+                "name": "John Doe",
+                "email": "johndoe@example.com"
+            },
+            "appointmentTime": "10:00 AM",
+            "status": "Confirmed",
+            "appointmentDate": "2024-11-10",
+            "doctor": {
+                "name": "Dr. Alice Johnson",
+                "hospital": "City Allergy Clinic"
+            }
+        },
+        {
+            "user": {
+                "name": "Jane Smith",
+                "email": "janesmith@example.com"
+            },
+            "appointmentTime": "11:30 AM",
+            "status": "Pending",
+            "appointmentDate": "2024-11-11",
+            "doctor": {
+                "name": "Dr. Mark Stevens",
+                "hospital": "Downtown Surgical Center"
+            }
+        },
+        {
+            "user": {
+                "name": "Michael Brown",
+                "email": "michaelbrown@example.com"
+            },
+            "appointmentTime": "9:00 AM",
+            "status": "Cancelled",
+            "appointmentDate": "2024-11-12",
+            "doctor": {
+                "name": "Dr. Sarah Kim",
+                "hospital": "Skin Health Hospital"
+            }
+        },
+        {
+            "user": {
+                "name": "Emily Davis",
+                "email": "emilydavis@example.com"
+            },
+            "appointmentTime": "2:00 PM",
+            "status": "Confirmed",
+            "appointmentDate": "2024-11-13",
+            "doctor": {
+                "name": "Dr. James Smith",
+                "hospital": "City Emergency Room"
+            }
+        },
+        {
+            "user": {
+                "name": "Robert Wilson",
+                "email": "robertwilson@example.com"
+            },
+            "appointmentTime": "8:30 AM",
+            "status": "Rescheduled",
+            "appointmentDate": "2024-11-14",
+            "doctor": {
+                "name": "Dr. Emily White",
+                "hospital": "Family Care Center"
+            }
+        },
+        {
+            "user": {
+                "name": "Sophia Martinez",
+                "email": "sophiamartinez@example.com"
+            },
+            "appointmentTime": "1:00 PM",
+            "status": "Confirmed",
+            "appointmentDate": "2024-11-15",
+            "doctor": {
+                "name": "Dr. David Brown",
+                "hospital": "City Medical Clinic"
+            }
+        },
+        {
+            "user": {
+                "name": "Daniel Lee",
+                "email": "daniellee@example.com"
+            },
+            "appointmentTime": "3:00 PM",
+            "status": "Cancelled",
+            "appointmentDate": "2024-11-16",
+            "doctor": {
+                "name": "Dr. Laura Green",
+                "hospital": "Genetic Health Institute"
+            }
+        },
+        {
+            "user": {
+                "name": "Olivia Harris",
+                "email": "oliviaharris@example.com"
+            },
+            "appointmentTime": "12:00 PM",
+            "status": "Confirmed",
+            "appointmentDate": "2024-11-17",
+            "doctor": {
+                "name": "Dr. Robert Taylor",
+                "hospital": "Brain Health Center"
+            }
+        },
+        {
+            "user": {
+                "name": "Liam Johnson",
+                "email": "liamjohnson@example.com"
+            },
+            "appointmentTime": "10:30 AM",
+            "status": "Pending",
+            "appointmentDate": "2024-11-18",
+            "doctor": {
+                "name": "Dr. Michelle Lee",
+                "hospital": "Women's Health Hospital"
+            }
+        },
+        {
+            "user": {
+                "name": "Chloe King",
+                "email": "chloeking@example.com"
+            },
+            "appointmentTime": "9:45 AM",
+            "status": "Confirmed",
+            "appointmentDate": "2024-11-19",
+            "doctor": {
+                "name": "Dr. Steven Davis",
+                "hospital": "Vision Care Center"
+            }
+        }
+    ]   
+]
